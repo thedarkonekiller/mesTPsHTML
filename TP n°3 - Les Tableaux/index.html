@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'exercices du TP N°03 du cours d'HTML">
+    <title>TP N°03 - Les Tableaux</title>
+</head>
+
+<body>
+    <header>
+        <h1>Florian CHARPENTIER&nbsp;-&nbsp;Les tableaux</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Mon premier tableau</h2>
+            <table border="4px">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td>Game Boy Advance</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman2</td>
+                        <td>Dreamcast</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wario Ware</td>
+                        <td>Game Boy Advance</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sonic Advt 2</td>
+                        <td>Dreamcast</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Mon second tableau</h2>
+            <table border="4px">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman2</td>
+                        <td rowspan="2">Dreamcast</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sonic Advt 2</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td rowspan="2">Game Boy Advance</td>
+                        <td rowspan="2">2003</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wario Ware</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Mon Troisième tableau</h2>
+            <table border="4px">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td>Game Boy Advance</td>
+                        <td>30.00&euro;</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman2</td>
+                        <td>Dreamcast</td>
+                        <td>40.00&euro;</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wario Ware</td>
+                        <td>Game Boy Advance</td>
+                        <td>25.00&euro;</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sonic Advt 2</td>
+                        <td>Dreamcast</td>
+                        <td>40.00&euro;</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Articles</td>
+                        <td colspan="3">Rayman 2 + Sonic Advt 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">TOTAL</td>
+                        <td>80.00&euro;</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section>
+            <h2>Mon emploi du temps</h2>
+            <table border="4px">
+                <thead>
+                    <tr>
+                        <th colspan="7">EMPLOI DU TEMPS</th>
+                    </tr>
+                    <tr>
+                        <th>X</th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Weekend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">A.M</td>
+                        <td rowspan="2">Rentrée</td>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td rowspan="4">Libre</td>
+                        <td>TP N°5</td>
+                        <td rowspan="4">NETFLIX & CHILL</td>
+                    </tr>
+                    <tr>
+                        <td>TP N°2</td>
+                        <td>TP N°4</td>
+                        <td>TP N°6</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">P.M</td>
+                        <td>HTML</td>
+                        <td rowspan="2">TP n°3</td>
+                        <td rowspan="2">Bilan</td>
+                        <td>JS</td>
+                    </tr>
+                    <tr>
+                        <td>TP n°1</td>
+                        <td>PHP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
